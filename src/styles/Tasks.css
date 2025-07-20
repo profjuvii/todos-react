@@ -1,0 +1,25 @@
+.task-container {
+    width: 420px;
+    height: 458px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.16);
+}
+
+.logo {
+    width: fit-content;
+    margin: 10px 0 8px 4px;
+}
+
+.task-list {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
