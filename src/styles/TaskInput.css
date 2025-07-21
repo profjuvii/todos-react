@@ -12,7 +12,6 @@
     transition: box-shadow 0.3s ease;
 }
 
-/* .input-container:hover, */
 .input-container:focus-within {
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.08), 0 0 20px 0 rgba(43, 149, 255, 0.8);
 }
@@ -62,4 +61,21 @@
 
 .add-btn:hover {
     background-color: var(--blue-dark);
+}
+
+@media (max-width: 834px) {
+    .input-container {
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        width: calc(100% - 16px);
+    }
+
+    .input-container:focus-within {
+        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    .add-btn:hover {
+        background-color: var(--blue);
+    }
 }

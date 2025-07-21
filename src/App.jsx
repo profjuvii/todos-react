@@ -88,7 +88,14 @@ function App() {
   }, []);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+    <div
+      style={{
+        position: "relative",
+        display: "flex",
+        flexDirection: "column",
+        gap: "20px",
+      }}
+    >
       <TasksContext.Provider value={taskOps}>
         <Tasks tasks={tasks} />
       </TasksContext.Provider>

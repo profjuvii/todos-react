@@ -21,12 +21,9 @@ function Task({ id, isDone, children }) {
 
       <p className="text">{children}</p>
 
-      <FontAwesomeIcon
-        icon={faTrash}
-        className="del-btn"
-        onClick={() => deleteTask(id)}
-        style={{ fontSize: "18px", width: "20px", height: "24px" }}
-      />
+      <button className="del-btn" onClick={() => deleteTask(id)}>
+        <FontAwesomeIcon icon={faTrash} />
+      </button>
     </div>
   );
 }
